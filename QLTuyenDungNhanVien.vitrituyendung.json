@@ -1,0 +1,939 @@
+[{
+  "_id": {
+    "$oid": "66e793945626b7425ef37635"
+  },
+  "maVTTD": "VTTD001",
+  "tenVTTD": "Lập trình viên PHP - Junior",
+  "loaiVTTD": "IT phần mềm",
+  "ngayBatDauTD": "2023-09-28",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 10 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Remote",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 1,
+  "moTaVTTD": "Tuyển dụng lập trình viên PHP mới ra trường.",
+  "kyNangYeuCau": [
+    "PHP",
+    "MySQL"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về PHP và MySQL.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-28",
+  "updated_at": "2023-09-28",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37636"
+  },
+  "maVTTD": "VTTD002",
+  "tenVTTD": "Lập trình viên C# - Junior",
+  "loaiVTTD": "IT phần mềm",
+  "ngayBatDauTD": "2023-10-05",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 8 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "456 Đường XYZ, Quận ABC, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng lập trình viên C# mới ra trường.",
+  "kyNangYeuCau": [
+    "C#",
+    "SQL Server"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về lập trình C# và SQL Server.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội học hỏi.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-28",
+  "updated_at": "2023-09-28",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37637"
+  },
+  "maVTTD": "VTTD003",
+  "tenVTTD": "Kỹ sư phần mềm Java - Middle",
+  "loaiVTTD": "IT phần mềm",
+  "ngayBatDauTD": "2023-10-10",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 5,
+  "mucLuong": "Trên 12 triệu",
+  "diaDiem": "Đà Nẵng",
+  "diaChiCuThe": "789 Đường HIJ, Quận KLM, Đà Nẵng",
+  "hinhThucLamViec": "Remote",
+  "gioiTinh": "Nam",
+  "kinhNghiemYeuCau": 2,
+  "moTaVTTD": "Tuyển dụng kỹ sư phần mềm Java có kinh nghiệm.",
+  "kyNangYeuCau": [
+    "Java",
+    "Spring Boot",
+    "SQL"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về Java, Spring Boot và SQL.",
+  "quyenLoi": "Lương cứng, thưởng, du lịch công ty.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-30",
+  "updated_at": "2023-09-30",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37638"
+  },
+  "maVTTD": "VTTD004",
+  "tenVTTD": "Chuyên viên Marketing - Senior",
+  "loaiVTTD": "Marketing",
+  "ngayBatDauTD": "2023-09-25",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 15 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "567 Đường LMN, Quận OPQ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 3,
+  "moTaVTTD": "Tuyển dụng chuyên viên Marketing có kinh nghiệm.",
+  "kyNangYeuCau": [
+    "Marketing chiến lược",
+    "Quảng cáo trực tuyến",
+    "SEO"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về Marketing chiến lược, quảng cáo trực tuyến và SEO.",
+  "quyenLoi": "Lương cứng, thưởng, thăng tiến nhanh.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-25",
+  "updated_at": "2023-09-25",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37639"
+  },
+  "maVTTD": "VTTD005",
+  "tenVTTD": "Kỹ sư Điện - Senior",
+  "loaiVTTD": "Kỹ thuật",
+  "ngayBatDauTD": "2023-09-20",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 1,
+  "mucLuong": "Trên 20 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Nam",
+  "kinhNghiemYeuCau": 5,
+  "moTaVTTD": "Tuyển dụng kỹ sư Điện có kinh nghiệm.",
+  "kyNangYeuCau": [
+    "Kỹ thuật điện",
+    "Sử dụng AutoCAD",
+    "Lập trình PLC"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về kỹ thuật điện, sử dụng AutoCAD và lập trình PLC.",
+  "quyenLoi": "Lương cứng cao, thưởng, thăng tiến nhanh.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-20",
+  "updated_at": "2023-09-20",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763a"
+  },
+  "maVTTD": "VTTD006",
+  "tenVTTD": "Lập trình viên PHP - Senior",
+  "loaiVTTD": "IT phần mềm",
+  "ngayBatDauTD": "2023-09-15",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 12 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "789 Đường LMN, Quận NOP, Hồ Chí Minh",
+  "hinhThucLamViec": "Remote",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 3,
+  "moTaVTTD": "Tuyển dụng lập trình viên PHP có kinh nghiệm.",
+  "kyNangYeuCau": [
+    "PHP",
+    "Laravel",
+    "MySQL"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về PHP, Laravel và MySQL.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-15",
+  "updated_at": "2023-09-15",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763b"
+  },
+  "maVTTD": "VTTD007",
+  "tenVTTD": "Chuyên viên Content Marketing - Middle",
+  "loaiVTTD": "Marketing",
+  "ngayBatDauTD": "2023-09-10",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 10 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường NOP, Quận STU, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 2,
+  "moTaVTTD": "Tuyển dụng chuyên viên Content Marketing có kinh nghiệm.",
+  "kyNangYeuCau": [
+    "Content Marketing",
+    "SEO",
+    "Copywriting"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về Content Marketing, SEO và Copywriting.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-10",
+  "updated_at": "2023-09-10",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763c"
+  },
+  "maVTTD": "VTTD008",
+  "tenVTTD": "Nhân viên Kinh doanh - Junior",
+  "loaiVTTD": "Kinh doanh",
+  "ngayBatDauTD": "2023-09-05",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 4,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường NOP, Quận STU, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Kinh doanh mới ra trường.",
+  "kyNangYeuCau": [
+    "Kỹ năng giao tiếp",
+    "Kỹ năng đàm phán",
+    "Kiên nhẫn dự phòng"
+  ],
+  "yeuCauChiTiet": "Có kỹ năng giao tiếp, kỹ năng đàm phán và kiên nhẫn dự phòng.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-05",
+  "updated_at": "2023-09-05",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763d"
+  },
+  "maVTTD": "VTTD009",
+  "tenVTTD": "Nhân viên Hành chính - Junior",
+  "loaiVTTD": "Hành chính",
+  "ngayBatDauTD": "2023-09-01",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Hành chính mới ra trường.",
+  "kyNangYeuCau": [
+    "Quản lý thời gian",
+    "Kỹ năng sử dụng văn phòng",
+    "Tổ chức sự kiện"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quản lý thời gian, kỹ năng sử dụng văn phòng và tổ chức sự kiện.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-01",
+  "updated_at": "2023-09-01",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763e"
+  },
+  "maVTTD": "VTTD010",
+  "tenVTTD": "Kỹ sư Điện tử - Junior",
+  "loaiVTTD": "Kỹ thuật",
+  "ngayBatDauTD": "2023-08-30",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 8 triệu",
+  "diaDiem": "Đà Nẵng",
+  "diaChiCuThe": "123 Đường XYZ, Quận ABC, Đà Nẵng",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 1,
+  "moTaVTTD": "Tuyển dụng kỹ sư Điện tử mới ra trường hoặc có kinh nghiệm ít.",
+  "kyNangYeuCau": [
+    "Kỹ thuật điện tử",
+    "Sử dụng phần mềm CAD",
+    "Lập trình vi điều khiển"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về kỹ thuật điện tử, sử dụng phần mềm CAD và lập trình vi điều khiển.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-30",
+  "updated_at": "2023-08-30",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef3763f"
+  },
+  "maVTTD": "VTTD011",
+  "tenVTTD": "Nhân viên Tài chính - Junior",
+  "loaiVTTD": "Tài chính",
+  "ngayBatDauTD": "2023-08-25",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Tài chính mới ra trường.",
+  "kyNangYeuCau": [
+    "Kiến thức về tài chính",
+    "Lập kế hoạch tài chính",
+    "Phân tích dự án"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về tài chính, lập kế hoạch tài chính và phân tích dự án.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-25",
+  "updated_at": "2023-08-25",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37640"
+  },
+  "maVTTD": "VTTD012",
+  "tenVTTD": "Nhân viên Sản Xuất - Junior",
+  "loaiVTTD": "Sản Xuất",
+  "ngayBatDauTD": "2023-08-20",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Sản Xuất mới ra trường.",
+  "kyNangYeuCau": [
+    "Quy trình sản xuất",
+    "Sử dụng máy móc sản xuất",
+    "Quản lý kho"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quy trình sản xuất, sử dụng máy móc sản xuất và quản lý kho.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-20",
+  "updated_at": "2023-08-20",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37641"
+  },
+  "maVTTD": "VTTD013",
+  "tenVTTD": "Nhân viên Hỗ trợ Khách hàng - Junior",
+  "loaiVTTD": "Hỗ trợ Khách hàng",
+  "ngayBatDauTD": "2023-08-15",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 4,
+  "mucLuong": "Trên 5 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Hỗ trợ Khách hàng mới ra trường.",
+  "kyNangYeuCau": [
+    "Kỹ năng giao tiếp",
+    "Giải quyết vấn đề",
+    "Xử lý khiếu nại"
+  ],
+  "yeuCauChiTiet": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-15",
+  "updated_at": "2023-08-15",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37642"
+  },
+  "maVTTD": "VTTD014",
+  "tenVTTD": "Nhân viên Dịch vụ Khách hàng - Junior",
+  "loaiVTTD": "Dịch vụ Khách hàng",
+  "ngayBatDauTD": "2023-08-10",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 5,
+  "mucLuong": "Trên 5 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận ABC, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Dịch vụ Khách hàng mới ra trường.",
+  "kyNangYeuCau": [
+    "Kỹ năng giao tiếp",
+    "Giải quyết vấn đề",
+    "Xử lý khiếu nại"
+  ],
+  "yeuCauChiTiet": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-10",
+  "updated_at": "2023-08-10",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37643"
+  },
+  "maVTTD": "VTTD015",
+  "tenVTTD": "Nhân viên Kỹ thuật - Junior",
+  "loaiVTTD": "Kỹ thuật",
+  "ngayBatDauTD": "2023-08-05",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 7 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Kỹ thuật mới ra trường.",
+  "kyNangYeuCau": [
+    "Kiến thức về kỹ thuật",
+    "Sửa chữa thiết bị",
+    "Hỗ trợ kỹ thuật"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về kỹ thuật, sửa chữa thiết bị và hỗ trợ kỹ thuật.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-05",
+  "updated_at": "2023-08-05",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37644"
+  },
+  "maVTTD": "VTTD016",
+  "tenVTTD": "Nhân viên Dự Án - Junior",
+  "loaiVTTD": "Quản lý Dự Án",
+  "ngayBatDauTD": "2023-08-01",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Dự Án mới ra trường.",
+  "kyNangYeuCau": [
+    "Quản lý dự án",
+    "Lập kế hoạch",
+    "Quản lý thời gian"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quản lý dự án, lập kế hoạch và quản lý thời gian.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-08-01",
+  "updated_at": "2023-08-01",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37645"
+  },
+  "maVTTD": "VTTD017",
+  "tenVTTD": "Nhân viên Marketing - Junior",
+  "loaiVTTD": "Marketing",
+  "ngayBatDauTD": "2023-07-30",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Marketing mới ra trường.",
+  "kyNangYeuCau": [
+    "Quảng cáo",
+    "Marketing truyền thông",
+    "Nghiên cứu thị trường"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quảng cáo, marketing truyền thông và nghiên cứu thị trường.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-07-30",
+  "updated_at": "2023-07-30",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37646"
+  },
+  "maVTTD": "VTTD018",
+  "tenVTTD": "Nhân viên Nhân sự - Junior",
+  "loaiVTTD": "Nhân sự",
+  "ngayBatDauTD": "2023-07-25",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Nhân sự mới ra trường.",
+  "kyNangYeuCau": [
+    "Quản lý nhân sự",
+    "Tuyển dụng",
+    "Phát triển nhân viên"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-07-25",
+  "updated_at": "2023-07-25",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37647"
+  },
+  "maVTTD": "VTTD018",
+  "tenVTTD": "Nhân viên Nhân sự - Junior",
+  "loaiVTTD": "Nhân sự",
+  "ngayBatDauTD": "2023-07-25",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hồ Chí Minh",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hồ Chí Minh",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Nhân sự mới ra trường.",
+  "kyNangYeuCau": [
+    "Quản lý nhân sự",
+    "Tuyển dụng",
+    "Phát triển nhân viên"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-07-25",
+  "updated_at": "2023-07-25",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37648"
+  },
+  "maVTTD": "VTTD019",
+  "tenVTTD": "Nhân viên Kế toán - Junior",
+  "loaiVTTD": "Kế toán",
+  "ngayBatDauTD": "2023-07-20",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 3,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường STU, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Kế toán mới ra trường.",
+  "kyNangYeuCau": [
+    "Kế toán thuế",
+    "Báo cáo tài chính",
+    "Quản lý tài chính"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về kế toán thuế, báo cáo tài chính và quản lý tài chính.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-07-20",
+  "updated_at": "2023-07-20",
+  "deleted_at": ""
+},
+{
+  "_id": {
+    "$oid": "66e793945626b7425ef37649"
+  },
+  "maVTTD": "VTTD020",
+  "tenVTTD": "Nhân viên Hành chính - Junior",
+  "loaiVTTD": "Hành chính",
+  "ngayBatDauTD": "2023-07-15",
+  "ngayKetThucTD": "2023-12-31",
+  "soLuongTD": 2,
+  "mucLuong": "Trên 6 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 0,
+  "moTaVTTD": "Tuyển dụng nhân viên Hành chính mới ra trường.",
+  "kyNangYeuCau": [
+    "Quản lý tài liệu",
+    "Lập kế hoạch",
+    "Sắp xếp công việc"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về quản lý tài liệu, lập kế hoạch và sắp xếp công việc.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-07-15",
+  "updated_at": "2023-07-15",
+  "deleted_at": "2024-9-16"
+},
+{
+  "_id": {
+    "$oid": "66e7ac350c3c7703535c0802"
+  },
+  "maVTTD": "VTD0020",
+  "tenVTTD": "Kỹ sư phần mềm",
+  "loaiVTTD": "Toàn thời gian",
+  "ngayBatDauTD": "9/16/2024",
+  "ngayKetThucTD": "10/16/2024",
+  "soLuongTD": 3,
+  "mucLuong": "1000 - 1500 USD",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "ABC",
+  "hinhThucLamViec": "Offline",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 1,
+  "moTaVTTD": "",
+  "kyNangYeuCau": [
+    "Giỏi code"
+  ],
+  "yeuCauChiTiet": "",
+  "quyenLoi": "",
+  "trangThaiVTTD": 0,
+  "created_at": "2024-9-16",
+  "updated_at": "2024-9-18",
+  "deleted_at": "",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Nguyen Van A",
+      "ngaySinh": "1990-01-01",
+      "GPA": 8.5
+    },
+    {
+      "hoTen": "Tran Thi B",
+      "ngaySinh": "1992-05-12",
+      "GPA": 9
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66eaf49c01e87dd8792fea24"
+  },
+  "maVTTD": "VTTD0021",
+  "tenVTTD": "Lập trình viên PHP – Junior",
+  "loaiVTTD": "IT phần mềm",
+  "ngayBatDauTD": "2023-09-23",
+  "ngayKetThucTD": "2023-12-02",
+  "soLuongTD": 6,
+  "mucLuong": "Trên 12 triệu",
+  "diaDiem": "Hà Nội",
+  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hà Nội",
+  "hinhThucLamViec": "Remote",
+  "gioiTinh": "Không yêu cầu",
+  "kinhNghiemYeuCau": 2,
+  "moTaVTTD": "Tuyển dụng lập trình viên PHP mới ra trường.",
+  "kyNangYeuCau": [
+    "PHP",
+    "MySQL",
+    "SQL Sever"
+  ],
+  "yeuCauChiTiet": "Có kiến thức về PHP và MySQL và SQL Sever.",
+  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
+  "danhSachUngVien": [
+    {
+      "hoTen": "Phan Công Huy",
+      "ngaySinh": "2003-08-28",
+      "GPA": 9
+    },
+    {
+      "hoTen": "Lê Bá Duy",
+      "ngaySinh": "2003-08-25",
+      "GPA": 10
+    }
+  ],
+  "trangThaiVTTD": 1,
+  "created_at": "2023-09-28",
+  "updated_at": "2023-09-28",
+  "deleted_at": ""
+}]
