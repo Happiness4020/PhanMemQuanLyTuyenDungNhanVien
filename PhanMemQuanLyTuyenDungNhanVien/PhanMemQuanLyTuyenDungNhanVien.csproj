@@ -316,6 +316,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\signup %281%29.png" />
+    <None Include="Resources\signup.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\background-welcome2.png" />
     <None Include="Resources\pexels-photo-4301951.jpg" />
     <None Include="Resources\pexels-lucas-allmann-1378424.jpg" />
     <None Include="Resources\pexels-photo-430195.jpg" />

@@ -35,9 +35,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.btn_DangKy = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,18 +111,9 @@
             this.textBox3.Size = new System.Drawing.Size(233, 30);
             this.textBox3.TabIndex = 12;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PhanMemQuanLyTuyenDungNhanVien.Properties.Resources.pexels_photo_430195;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(538, 213);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // btn_Huy
             // 
-            this.btn_Huy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.btn_Huy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(112)))), ((int)(((byte)(253)))));
             this.btn_Huy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Huy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Huy.ForeColor = System.Drawing.Color.White;
@@ -133,7 +126,7 @@
             // 
             // btn_DangKy
             // 
-            this.btn_DangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.btn_DangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(112)))), ((int)(((byte)(253)))));
             this.btn_DangKy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DangKy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangKy.ForeColor = System.Drawing.Color.White;
@@ -144,15 +137,34 @@
             this.btn_DangKy.Text = "Đăng ký";
             this.btn_DangKy.UseVisualStyleBackColor = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(-36, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(615, 237);
+            this.panel4.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::PhanMemQuanLyTuyenDungNhanVien.Properties.Resources.signup__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(120, -15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(495, 213);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(538, 695);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(112)))), ((int)(((byte)(253)))));
+            this.ClientSize = new System.Drawing.Size(534, 695);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_DangKy);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -163,6 +175,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_DangKy";
             this.Text = "frm_DangKy";
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,8 +191,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Huy;
         private System.Windows.Forms.Button btn_DangKy;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
