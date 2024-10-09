@@ -32,9 +32,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_DangNhap = new System.Windows.Forms.TextBox();
+            this.txt_MatKhau = new System.Windows.Forms.TextBox();
+            this.txt_XacNhanMK = new System.Windows.Forms.TextBox();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.btn_DangKy = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -87,29 +87,31 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 
-            // textBox1
+            // txt_DangNhap
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(262, 333);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 30);
-            this.textBox1.TabIndex = 10;
+            this.txt_DangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DangNhap.Location = new System.Drawing.Point(262, 333);
+            this.txt_DangNhap.Name = "txt_DangNhap";
+            this.txt_DangNhap.Size = new System.Drawing.Size(233, 30);
+            this.txt_DangNhap.TabIndex = 10;
             // 
-            // textBox2
+            // txt_MatKhau
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(262, 420);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 30);
-            this.textBox2.TabIndex = 11;
+            this.txt_MatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MatKhau.Location = new System.Drawing.Point(262, 420);
+            this.txt_MatKhau.Name = "txt_MatKhau";
+            this.txt_MatKhau.PasswordChar = '●';
+            this.txt_MatKhau.Size = new System.Drawing.Size(233, 30);
+            this.txt_MatKhau.TabIndex = 11;
             // 
-            // textBox3
+            // txt_XacNhanMK
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(262, 500);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 30);
-            this.textBox3.TabIndex = 12;
+            this.txt_XacNhanMK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_XacNhanMK.Location = new System.Drawing.Point(262, 500);
+            this.txt_XacNhanMK.Name = "txt_XacNhanMK";
+            this.txt_XacNhanMK.PasswordChar = '●';
+            this.txt_XacNhanMK.Size = new System.Drawing.Size(233, 30);
+            this.txt_XacNhanMK.TabIndex = 12;
             // 
             // btn_Huy
             // 
@@ -123,6 +125,7 @@
             this.btn_Huy.TabIndex = 15;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.UseVisualStyleBackColor = false;
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // btn_DangKy
             // 
@@ -136,6 +139,7 @@
             this.btn_DangKy.TabIndex = 14;
             this.btn_DangKy.Text = "Đăng ký";
             this.btn_DangKy.UseVisualStyleBackColor = false;
+            this.btn_DangKy.Click += new System.EventHandler(this.btn_DangKy_Click);
             // 
             // panel4
             // 
@@ -165,15 +169,16 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_DangKy);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_XacNhanMK);
+            this.Controls.Add(this.txt_MatKhau);
+            this.Controls.Add(this.txt_DangNhap);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_DangKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_DangKy";
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -188,9 +193,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_DangNhap;
+        private System.Windows.Forms.TextBox txt_MatKhau;
+        private System.Windows.Forms.TextBox txt_XacNhanMK;
         private System.Windows.Forms.Button btn_Huy;
         private System.Windows.Forms.Button btn_DangKy;
         private System.Windows.Forms.Panel panel4;

@@ -68,7 +68,6 @@ namespace QuanLiNhaHang
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(334, 34);
             this.textBoxUsername.TabIndex = 1;
-            this.textBoxUsername.Text = "NV001";
             // 
             // label1
             // 
@@ -116,7 +115,6 @@ namespace QuanLiNhaHang
             this.textBoxPassword.PasswordChar = '●';
             this.textBoxPassword.Size = new System.Drawing.Size(334, 34);
             this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.Text = "123";
             // 
             // label2
             // 

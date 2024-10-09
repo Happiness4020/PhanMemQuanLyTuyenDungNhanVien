@@ -1,4 +1,6 @@
-﻿using PhanMemQuanLyTuyenDungNhanVien;
+﻿using MongoDB.Driver.Core.Configuration;
+using MongoDB.Driver;
+using PhanMemQuanLyTuyenDungNhanVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,11 @@ namespace QuanLiNhaHang
 {
     public partial class frm_Login : Form
     {
+
+        // Thay đổi connectionString cho phù hợp với MongoDB của bạn
+        private readonly string connectionString = "mongodb://localhost:27017";
+        private readonly string databaseName = "QLTuyenDungNhanVien"; // Tên cơ sở dữ liệu
+        private readonly string collectionName = "UserAccounts"; // Tên collection chứa thông tin người dùng
         public frm_Login()
         {
             InitializeComponent();
@@ -42,34 +49,34 @@ namespace QuanLiNhaHang
                 return;
             }
 
-            //if (MainClass.ValidUser(textBoxUsername.Text, textBoxPassword.Text, out int accountType))
-            //{
-            //    switch (accountType)
-            //    {
-            //        case 0: // User
-            //            frm_GiaoDien_NhanVien fr = new frm_GiaoDien_NhanVien();
-            //            this.Hide();
-            //            fr.ShowDialog();
-            //            this.Show();
-            //            break;
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
 
-            //        case 1: // Admin
-            //            frm_Main form = new frm_Main();
-            //            this.Hide();
-            //            form.ShowDialog();
-            //            this.Show();
-            //            break;
-
-            //        default:
-            //            MessageBox.Show("Lỗi không xác định!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            break;
-            //    }
-            //}
+            // Kiểm tra thông tin đăng nhập từ MongoDB
+            if (IsLoginValid(username, password))
+            {
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmDashBoard mainForm = new frmDashBoard();
+                this.Hide();
+                mainForm.Show();
+            }
             else
             {
                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
+        }
+
+        // Phương thức kiểm tra thông tin đăng nhập từ MongoDB
+        private bool IsLoginValid(string username, string password)
+        {
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(databaseName);
+            var collection = database.GetCollection<User>("UserAccounts"); // Đổi thành tên collection bạn sử dụng
+
+            // Tìm người dùng trong MongoDB
+            var user = collection.Find(u => u.username == username && u.password == password).FirstOrDefault();
+
+            return user != null;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
