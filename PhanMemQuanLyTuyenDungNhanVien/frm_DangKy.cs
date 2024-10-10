@@ -30,7 +30,9 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             // Kiểm tra xem các trường đã được điền đầy đủ chưa
             if (string.IsNullOrEmpty(txt_DangNhap.Text) ||
                 string.IsNullOrEmpty(txt_MatKhau.Text) ||
-                string.IsNullOrEmpty(txt_XacNhanMK.Text))
+                string.IsNullOrEmpty(txt_XacNhanMK.Text) ||
+                string.IsNullOrEmpty(txt_Email.Text) ||
+                string.IsNullOrEmpty(txt_HoTen.Text) )
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -39,15 +41,15 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             // Kiểm tra mật khẩu xác nhận
             if (txt_MatKhau.Text != txt_XacNhanMK.Text)
             {
-                MessageBox.Show("Mật khẩu không khớp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Mật khẩu và xác nhận mật khẩu không khớp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // Gọi hàm đăng ký
-            RegisterUser(txt_DangNhap.Text, txt_MatKhau.Text);
+            RegisterUser(txt_DangNhap.Text, txt_MatKhau.Text,txt_Email.Text,txt_HoTen.Text);
         }
 
-        private void RegisterUser(string username, string password)
+        private void RegisterUser(string username, string password, string email, string fullname)
         {
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
@@ -61,14 +63,16 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                 return;
             }
 
-          
-
             // Tạo đối tượng người dùng mới
             var newUser = new User
             {
                 username = username,
-                password = password
+                password = password,
+                role = "User",
+                email = email,
+                fullname = fullname
             };
+
 
             // Lưu người dùng vào MongoDB
             collection.InsertOne(newUser);
