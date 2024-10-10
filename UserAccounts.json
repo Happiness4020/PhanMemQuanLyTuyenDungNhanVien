@@ -1,21 +1,20 @@
 [{
   "_id": {
-    "$oid": "670691f94670a26c32c38841"
+    "$oid": "6707e42d70b92736f9327694"
   },
-  "username": "user1",
-  "password": "123"
+  "username": "admin",
+  "password": "12",
+  "role": "Admin",
+  "email": "admin@gmail.com",
+  "fullname": "Quản trị viên"
 },
 {
   "_id": {
-    "$oid": "670691f94670a26c32c38842"
+    "$oid": "6707e5632c323bc3aef17ab1"
   },
-  "username": "user2",
-  "password": "123"
-},
-{
-  "_id": {
-    "$oid": "670694c95f0b1bdad7b52013"
-  },
-  "username": "user3",
-  "password": "12"
+  "username": "NV001",
+  "password": "123",
+  "role": "User",
+  "email": "nv1@gmail.com",
+  "fullname": "Văn Lâm"
 }]
