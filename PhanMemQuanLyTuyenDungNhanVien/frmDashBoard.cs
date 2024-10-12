@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLiNhaHang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,6 +99,9 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
+            frm_Login lg = new frm_Login();
+            lg.Show();
+
         }
 
         private void btn_ThongKe_Click(object sender, EventArgs e)

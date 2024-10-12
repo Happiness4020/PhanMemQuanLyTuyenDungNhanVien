@@ -164,6 +164,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_QLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNhanVien.Designer.cs">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="frmDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNhanVien.resx">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -316,6 +326,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\signup %281%29.png" />
+    <None Include="Resources\signup.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\background-welcome2.png" />
     <None Include="Resources\pexels-photo-4301951.jpg" />
     <None Include="Resources\pexels-lucas-allmann-1378424.jpg" />
     <None Include="Resources\pexels-photo-430195.jpg" />
