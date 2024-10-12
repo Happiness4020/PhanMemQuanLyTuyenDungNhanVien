@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "66e793945626b7425ef37635"
+    "$oid": "66f6d4f110e1b4aedd0363c4"
   },
   "maVTTD": "VTTD001",
   "tenVTTD": "Lập trình viên PHP - Junior",
@@ -23,14 +23,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "123456789",
+      "hoTen": "Phan Công Suy",
+      "ngaySinh": "1995-02-15",
+      "diaChi": "Hóc Môn TPHCM",
+      "email": "suy@gmail.com",
+      "soDienThoai": "0251625585",
+      "hocVan": "Đại học ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.5,
+      "cacKyNang": [
+        "C#",
+        "SQL Server",
+        "JavaScript"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm làm việc với C# và SQL Server.",
+      "kinhNghiemLamViec": "1 năm tại công ty ABC.",
+      "cacDuAn": "Đã tham gia dự án X, Y, Z.",
+      "mucTieuCaNhan": "Phát triển kỹ năng lập trình."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "0847262333",
+      "hoTen": "Tôn Thất Minh Quang",
+      "ngaySinh": "2002-12-29",
+      "diaChi": "quận 12,TPHCM",
+      "email": "ttmq@gmail.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.7,
+      "cacKyNang": [
+        "PHP",
+        "SQL Server",
+        "Java"
+      ],
+      "chiTietKyNang": "Sử dụng thành thạo PHP.",
+      "kinhNghiemLamViec": "2 năm tại công ty XYZ.",
+      "cacDuAn": "Đã tham gia dự án SIUUUU",
+      "mucTieuCaNhan": "Phát triển sự nghiệp lập trình viên."
     }
   ],
   "trangThaiVTTD": 1,
@@ -40,7 +70,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37636"
+    "$oid": "66f6d4f110e1b4aedd0363c5"
   },
   "maVTTD": "VTTD002",
   "tenVTTD": "Lập trình viên C# - Junior",
@@ -63,14 +93,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội học hỏi.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "111222333",
+      "hoTen": "Lê Bá Duy",
+      "ngaySinh": "2003-08-25",
+      "diaChi": "Thuận An,Bình Dương",
+      "email": "baduy2508@gmail.com",
+      "soDienThoai": "0909123456",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "C#",
+        "SQL Server",
+        "JavaScript"
+      ],
+      "chiTietKyNang": "Có kiến thức về C# và SQL Server.",
+      "kinhNghiemLamViec": "1 năm tại công ty Ricons.",
+      "cacDuAn": "Đã tham gia dự án Ricons",
+      "mucTieuCaNhan": "Phát triển kỹ năng lập trình ứng dụng."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "444555666",
+      "hoTen": "Nguyễn Lê Phong",
+      "ngaySinh": "2003-02-25",
+      "diaChi": "Yến Phu,Phú Yên",
+      "email": "nlphong10@gmail.com",
+      "soDienThoai": "0707070707",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.8,
+      "cacKyNang": [
+        "C#",
+        "SQL Server",
+        "HTML"
+      ],
+      "chiTietKyNang": "Sử dụng thành thạo HTML và SQL Server.",
+      "kinhNghiemLamViec": "2 năm tại công ty Raucon.",
+      "cacDuAn": "Đã tham gia dự án Satij",
+      "mucTieuCaNhan": "Phát triển sự nghiệp lập trình viên HTML."
     }
   ],
   "trangThaiVTTD": 1,
@@ -80,7 +140,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37637"
+    "$oid": "66f6d4f110e1b4aedd0363c6"
   },
   "maVTTD": "VTTD003",
   "tenVTTD": "Kỹ sư phần mềm Java - Middle",
@@ -104,14 +164,44 @@
   "quyenLoi": "Lương cứng, thưởng, du lịch công ty.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "777888999",
+      "hoTen": "Phùng Thanh Độ",
+      "ngaySinh": "1990-12-05",
+      "diaChi": "101 Đường NOP, Quận QRS, Hà Nội",
+      "email": "thi.e@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ],
+      "chiTietKyNang": "Sử dụng thành thạo Java, Spring Boot và MySQL.",
+      "kinhNghiemLamViec": "3 năm tại công ty PQR.",
+      "cacDuAn": "Tham gia dự án M, N, O.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư phần mềm Java."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "555444333",
+      "hoTen": "Đinh Văn Khoa",
+      "ngaySinh": "1988-07-15",
+      "diaChi": "321 Đường UVW, Quận XYZ, Hồ Chí Minh",
+      "email": "van.f@example.com",
+      "soDienThoai": "0909123456",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.7,
+      "cacKyNang": [
+        "Java",
+        "Spring Boot",
+        "Hibernate"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm làm việc với Java, Spring Boot và Hibernate.",
+      "kinhNghiemLamViec": "4 năm tại công ty XYZ.",
+      "cacDuAn": "Tham gia dự án P, Q.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư phần mềm Java."
     }
   ],
   "trangThaiVTTD": 1,
@@ -121,7 +211,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37638"
+    "$oid": "66f6d4f110e1b4aedd0363c7"
   },
   "maVTTD": "VTTD004",
   "tenVTTD": "Chuyên viên Marketing - Senior",
@@ -145,14 +235,44 @@
   "quyenLoi": "Lương cứng, thưởng, thăng tiến nhanh.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "56165165189",
+      "hoTen": "Nguyễn Tuấn Kiệt",
+      "ngaySinh": "1987-03-10",
+      "diaChi": "Tân Phú,TPHCM",
+      "email": "NTK@gmail.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học",
+      "chuyenNganh": "Marketing chiến lược",
+      "GPA": 3.8,
+      "cacKyNang": [
+        "Marketing chiến lược",
+        "Quảng cáo trực tuyến",
+        "SEO"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm làm việc trong lĩnh vực Marketing chiến lược, quảng cáo trực tuyến và SEO.",
+      "kinhNghiemLamViec": "5 năm tại công ty XYZ.",
+      "cacDuAn": "Tham gia dự án A, B, C.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp chuyên viên Marketing."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333222111",
+      "hoTen": "Nguyễn Thị Thao Thủ",
+      "ngaySinh": "2002-07-10",
+      "diaChi": "Đâu đó ở Lâm Đồng",
+      "email": "nttt@gmail.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học",
+      "chuyenNganh": "Quảng cáo trực tuyến",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Marketing chiến lược",
+        "Quảng cáo trực tuyến",
+        "Content Marketing"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực Marketing chiến lược, quảng cáo trực tuyến và Content Marketing.",
+      "kinhNghiemLamViec": "4 năm tại công ty Thao Fat.",
+      "cacDuAn": "Tham gia dự án tại Dallas",
+      "mucTieuCaNhan": "Phát triển sự nghiệp chuyên viên Marketing."
     }
   ],
   "trangThaiVTTD": 1,
@@ -162,7 +282,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37639"
+    "$oid": "66f6d4f110e1b4aedd0363c8"
   },
   "maVTTD": "VTTD005",
   "tenVTTD": "Kỹ sư Điện - Senior",
@@ -186,14 +306,44 @@
   "quyenLoi": "Lương cứng cao, thưởng, thăng tiến nhanh.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "222333444",
+      "hoTen": "Nguyễn Thị I",
+      "ngaySinh": "1985-06-15",
+      "diaChi": "789 Đường HIJ, Quận KLM, Hà Nội",
+      "email": "thi.i@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Kỹ thuật Điện",
+      "chuyenNganh": "Kỹ thuật điện",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kỹ thuật điện",
+        "Sử dụng AutoCAD",
+        "Lập trình PLC"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực kỹ thuật điện, sử dụng AutoCAD và lập trình PLC.",
+      "kinhNghiemLamViec": "6 năm tại công ty XYZ.",
+      "cacDuAn": "Tham gia dự án A, B, C.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư Điện."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "111222333",
+      "hoTen": "Trần Văn K",
+      "ngaySinh": "1987-03-25",
+      "diaChi": "456 Đường NOP, Quận STU, Hà Nội",
+      "email": "van.k@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Kỹ thuật Điện",
+      "chuyenNganh": "Kỹ thuật điện",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kỹ thuật điện",
+        "Sử dụng AutoCAD",
+        "Lập trình PLC"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực kỹ thuật điện, sử dụng AutoCAD và lập trình PLC.",
+      "kinhNghiemLamViec": "5 năm tại công ty ABC.",
+      "cacDuAn": "Tham gia dự án X, Y.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư Điện."
     }
   ],
   "trangThaiVTTD": 1,
@@ -203,7 +353,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763a"
+    "$oid": "66f6d4f110e1b4aedd0363c9"
   },
   "maVTTD": "VTTD006",
   "tenVTTD": "Lập trình viên PHP - Senior",
@@ -227,14 +377,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Lê Minh Tuyết Kỳ",
+      "ngaySinh": "2003-12-15",
+      "diaChi": "Tân Phú,TPHCM",
+      "email": "kyky@gmail.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực PHP, Laravel và MySQL.",
+      "kinhNghiemLamViec": "4 năm tại công ty ABC.",
+      "cacDuAn": "Tham gia dự án A, B, C.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp lập trình viên PHP."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "777888999",
+      "hoTen": "Nguyễn Phương Loan",
+      "ngaySinh": "2003-07-09",
+      "diaChi": "Bình Định",
+      "email": "loan@gmail.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Công Nghệ",
+      "chuyenNganh": "Kỹ sư phần mềm",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực PHP, Laravel và MySQL.",
+      "kinhNghiemLamViec": "5 năm tại công ty MC.",
+      "cacDuAn": "Tham gia dự án HHH.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp lập trình viên PHP."
     }
   ],
   "trangThaiVTTD": 1,
@@ -244,7 +424,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763b"
+    "$oid": "66f6d4f110e1b4aedd0363ca"
   },
   "maVTTD": "VTTD007",
   "tenVTTD": "Chuyên viên Content Marketing - Middle",
@@ -268,14 +448,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "555444333",
+      "hoTen": "Trần Văn H",
+      "ngaySinh": "1990-03-05",
+      "diaChi": "789 Đường XYZ, Quận KLM, Hà Nội",
+      "email": "van.h@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Marketing",
+      "chuyenNganh": "Content Marketing",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Content Marketing",
+        "SEO",
+        "Copywriting"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực Content Marketing, SEO và Copywriting.",
+      "kinhNghiemLamViec": "3 năm tại công ty XYZ.",
+      "cacDuAn": "Tham gia dự án A, B, C.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp chuyên viên Content Marketing."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "222333444",
+      "hoTen": "Lê Thị L",
+      "ngaySinh": "1992-02-15",
+      "diaChi": "456 Đường NOP, Quận QRS, Hồ Chí Minh",
+      "email": "thi.l@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Marketing",
+      "chuyenNganh": "Copywriting",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Content Marketing",
+        "SEO",
+        "Copywriting"
+      ],
+      "chiTietKyNang": "Có kinh nghiệm trong lĩnh vực Content Marketing, SEO và Copywriting.",
+      "kinhNghiemLamViec": "4 năm tại công ty ABC.",
+      "cacDuAn": "Tham gia dự án X, Y.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp chuyên viên Content Marketing."
     }
   ],
   "trangThaiVTTD": 1,
@@ -285,7 +495,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763c"
+    "$oid": "66f6d4f110e1b4aedd0363cb"
   },
   "maVTTD": "VTTD008",
   "tenVTTD": "Nhân viên Kinh doanh - Junior",
@@ -309,14 +519,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Phạm Văn P",
+      "ngaySinh": "1997-01-20",
+      "diaChi": "789 Đường XYZ, Quận KLM, Hà Nội",
+      "email": "van.p@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Kinh doanh",
+      "chuyenNganh": "Kinh doanh",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Kỹ năng đàm phán",
+        "Kiên nhẫn dự phòng"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, kỹ năng đàm phán và kiên nhẫn dự phòng.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kinh doanh."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Nguyễn Văn Q",
+      "ngaySinh": "1996-09-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "van.q@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Kinh doanh",
+      "chuyenNganh": "Kinh doanh",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Kỹ năng đàm phán",
+        "Kiên nhẫn dự phòng"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, kỹ năng đàm phán và kiên nhẫn dự phòng.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kinh doanh."
     }
   ],
   "trangThaiVTTD": 1,
@@ -326,7 +566,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763d"
+    "$oid": "66f6d4f110e1b4aedd0363cc"
   },
   "maVTTD": "VTTD009",
   "tenVTTD": "Nhân viên Hành chính - Junior",
@@ -350,14 +590,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "222333444",
+      "hoTen": "Kim Ri Cha",
+      "ngaySinh": "1998-03-20",
+      "diaChi": "Hàn Quốc",
+      "email": "Richa@gmail.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Kinh doanh",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Quản lý thời gian",
+        "Kỹ năng sử dụng văn phòng",
+        "Tổ chức sự kiện"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý thời gian, kỹ năng sử dụng văn phòng và tổ chức sự kiện.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hành chính."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "666777888",
+      "hoTen": "Mo Satij",
+      "ngaySinh": "1997-05-15",
+      "diaChi": "Ả Rập",
+      "email": "sita@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Kinh doanh",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Quản lý thời gian",
+        "Kỹ năng sử dụng văn phòng",
+        "Tổ chức sự kiện"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý thời gian, kỹ năng sử dụng văn phòng và tổ chức sự kiện.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hành chính."
     }
   ],
   "trangThaiVTTD": 1,
@@ -367,7 +637,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763e"
+    "$oid": "66f6d4f110e1b4aedd0363cd"
   },
   "maVTTD": "VTTD010",
   "tenVTTD": "Kỹ sư Điện tử - Junior",
@@ -391,14 +661,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "123456789",
+      "hoTen": "Nguyễn Thị Thu Hoa",
+      "ngaySinh": "1999-02-10",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "flower@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Kỹ thuật Điện tử",
+      "chuyenNganh": "Kỹ thuật điện tử",
+      "GPA": 3.7,
+      "cacKyNang": [
+        "Kỹ thuật điện tử",
+        "Sử dụng phần mềm CAD",
+        "Lập trình vi điều khiển"
+      ],
+      "chiTietKyNang": "Có kiến thức về kỹ thuật điện tử, sử dụng phần mềm CAD và lập trình vi điều khiển.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư Điện tử."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "987654321",
+      "hoTen": "Nguyễn Hải Đăng",
+      "ngaySinh": "1998-08-25",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "haidnag@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Kỹ thuật Điện tử",
+      "chuyenNganh": "Kỹ thuật điện tử",
+      "GPA": 3.5,
+      "cacKyNang": [
+        "Kỹ thuật điện tử",
+        "Sử dụng phần mềm CAD",
+        "Lập trình vi điều khiển"
+      ],
+      "chiTietKyNang": "Có kiến thức về kỹ thuật điện tử, sử dụng phần mềm CAD và lập trình vi điều khiển.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp kỹ sư Điện tử."
     }
   ],
   "trangThaiVTTD": 1,
@@ -408,7 +708,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef3763f"
+    "$oid": "66f6d4f110e1b4aedd0363ce"
   },
   "maVTTD": "VTTD011",
   "tenVTTD": "Nhân viên Tài chính - Junior",
@@ -432,14 +732,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Trịnh Trần Phương Tuấn",
+      "ngaySinh": "1996-06-10",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "van.h@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Kế toán",
+      "chuyenNganh": "Kế toán",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kiến thức về tài chính",
+        "Lập kế hoạch tài chính",
+        "Phân tích dự án"
+      ],
+      "chiTietKyNang": "Có kiến thức về tài chính, lập kế hoạch tài chính và phân tích dự án.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Tài chính."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Trần Nguyễn Thiên An",
+      "ngaySinh": "1997-07-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "thi.t@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Kế toán",
+      "chuyenNganh": "Kế toán",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kiến thức về tài chính",
+        "Lập kế hoạch tài chính",
+        "Phân tích dự án"
+      ],
+      "chiTietKyNang": "Có kiến thức về tài chính, lập kế hoạch tài chính và phân tích dự án.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Tài chính."
     }
   ],
   "trangThaiVTTD": 1,
@@ -449,7 +779,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37640"
+    "$oid": "66f6d4f110e1b4aedd0363cf"
   },
   "maVTTD": "VTTD012",
   "tenVTTD": "Nhân viên Sản Xuất - Junior",
@@ -473,14 +803,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Nguyễn Văn N",
+      "ngaySinh": "1997-08-10",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "van.n@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Công nghệ",
+      "chuyenNganh": "Công nghệ sản xuất",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Quy trình sản xuất",
+        "Sử dụng máy móc sản xuất",
+        "Quản lý kho"
+      ],
+      "chiTietKyNang": "Có kiến thức về quy trình sản xuất, sử dụng máy móc sản xuất và quản lý kho.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Sản Xuất."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Lê Thị L",
+      "ngaySinh": "1996-09-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "thi.l@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Công nghệ",
+      "chuyenNganh": "Công nghệ sản xuất",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Quy trình sản xuất",
+        "Sử dụng máy móc sản xuất",
+        "Quản lý kho"
+      ],
+      "chiTietKyNang": "Có kiến thức về quy trình sản xuất, sử dụng máy móc sản xuất và quản lý kho.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Sản Xuất."
     }
   ],
   "trangThaiVTTD": 1,
@@ -490,7 +850,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37641"
+    "$oid": "66f6d4f110e1b4aedd0363d0"
   },
   "maVTTD": "VTTD013",
   "tenVTTD": "Nhân viên Hỗ trợ Khách hàng - Junior",
@@ -514,14 +874,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Trương Tuấn Tú",
+      "ngaySinh": "1998-01-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "thi.p@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Ngoại ngữ",
+      "chuyenNganh": "Ngoại ngữ",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Giải quyết vấn đề",
+        "Xử lý khiếu nại"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hỗ trợ Khách hàng."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Phan Tấn Trung",
+      "ngaySinh": "1997-09-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "van.v@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Ngoại ngữ",
+      "chuyenNganh": "Ngoại ngữ",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Giải quyết vấn đề",
+        "Xử lý khiếu nại"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hỗ trợ Khách hàng."
     }
   ],
   "trangThaiVTTD": 1,
@@ -531,7 +921,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37642"
+    "$oid": "66f6d4f110e1b4aedd0363d1"
   },
   "maVTTD": "VTTD014",
   "tenVTTD": "Nhân viên Dịch vụ Khách hàng - Junior",
@@ -555,14 +945,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Nguyễn Văn W",
+      "ngaySinh": "1998-02-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "van.w@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Kinh doanh",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Giải quyết vấn đề",
+        "Xử lý khiếu nại"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Dịch vụ Khách hàng."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Hoàng Thị H",
+      "ngaySinh": "1997-03-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "thi.h@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Kinh doanh",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kỹ năng giao tiếp",
+        "Giải quyết vấn đề",
+        "Xử lý khiếu nại"
+      ],
+      "chiTietKyNang": "Có kỹ năng giao tiếp, giải quyết vấn đề và xử lý khiếu nại.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Dịch vụ Khách hàng."
     }
   ],
   "trangThaiVTTD": 1,
@@ -572,7 +992,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37643"
+    "$oid": "66f6d4f110e1b4aedd0363d2"
   },
   "maVTTD": "VTTD015",
   "tenVTTD": "Nhân viên Kỹ thuật - Junior",
@@ -596,14 +1016,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Mai Ánh Dương",
+      "ngaySinh": "1998-04-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "thi.l@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Công nghệ",
+      "chuyenNganh": "Công nghệ kỹ thuật",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Kiến thức về kỹ thuật",
+        "Sửa chữa thiết bị",
+        "Hỗ trợ kỹ thuật"
+      ],
+      "chiTietKyNang": "Có kiến thức về kỹ thuật, sửa chữa thiết bị và hỗ trợ kỹ thuật.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kỹ thuật."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Nguyễn Công Phương",
+      "ngaySinh": "1997-05-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "van.n@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Công nghệ",
+      "chuyenNganh": "Công nghệ kỹ thuật",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Kiến thức về kỹ thuật",
+        "Sửa chữa thiết bị",
+        "Hỗ trợ kỹ thuật"
+      ],
+      "chiTietKyNang": "Có kiến thức về kỹ thuật, sửa chữa thiết bị và hỗ trợ kỹ thuật.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kỹ thuật."
     }
   ],
   "trangThaiVTTD": 1,
@@ -613,7 +1063,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37644"
+    "$oid": "66f6d4f110e1b4aedd0363d3"
   },
   "maVTTD": "VTTD016",
   "tenVTTD": "Nhân viên Dự Án - Junior",
@@ -637,14 +1087,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Phan Thị P",
+      "ngaySinh": "1998-06-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "thi.p@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị dự án",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Quản lý dự án",
+        "Lập kế hoạch",
+        "Quản lý thời gian"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý dự án, lập kế hoạch và quản lý thời gian.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Dự Án."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Vũ Văn V",
+      "ngaySinh": "1997-07-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "van.v@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị dự án",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Quản lý dự án",
+        "Lập kế hoạch",
+        "Quản lý thời gian"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý dự án, lập kế hoạch và quản lý thời gian.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Dự Án."
     }
   ],
   "trangThaiVTTD": 1,
@@ -654,7 +1134,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37645"
+    "$oid": "66f6d4f110e1b4aedd0363d4"
   },
   "maVTTD": "VTTD017",
   "tenVTTD": "Nhân viên Marketing - Junior",
@@ -678,14 +1158,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Nguyễn Văn Vương",
+      "ngaySinh": "1998-08-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "nvuong@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Marketing",
+      "chuyenNganh": "Marketing quảng cáo",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Quảng cáo",
+        "Marketing truyền thông",
+        "Nghiên cứu thị trường"
+      ],
+      "chiTietKyNang": "Có kiến thức về quảng cáo, marketing truyền thông và nghiên cứu thị trường.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Marketing."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Nguyễn Ngọc Khánh Ngân",
+      "ngaySinh": "1997-10-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hà Nội",
+      "email": "Kngan@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Marketing",
+      "chuyenNganh": "Marketing truyền thông",
+      "GPA": 3.6,
+      "cacKyNang": [
+        "Quảng cáo",
+        "Marketing truyền thông",
+        "Nghiên cứu thị trường"
+      ],
+      "chiTietKyNang": "Có kiến thức về quảng cáo, marketing truyền thông và nghiên cứu thị trường.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Marketing."
     }
   ],
   "trangThaiVTTD": 1,
@@ -695,7 +1205,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37646"
+    "$oid": "66f6d4f110e1b4aedd0363d5"
   },
   "maVTTD": "VTTD018",
   "tenVTTD": "Nhân viên Nhân sự - Junior",
@@ -719,14 +1229,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Trần Thị T",
+      "ngaySinh": "1998-12-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "thi.t@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Nhân sự",
+      "chuyenNganh": "Quản trị Nhân sự",
+      "GPA": 3.9,
+      "cacKyNang": [
+        "Quản lý nhân sự",
+        "Tuyển dụng",
+        "Phát triển nhân viên"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Nhân sự."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Nguyễn Thị N",
+      "ngaySinh": "1997-11-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "thi.n@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Nhân sự",
+      "chuyenNganh": "Quản trị Nhân sự",
+      "GPA": 3.5,
+      "cacKyNang": [
+        "Quản lý nhân sự",
+        "Tuyển dụng",
+        "Phát triển nhân viên"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Nhân sự."
     }
   ],
   "trangThaiVTTD": 1,
@@ -736,7 +1276,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37647"
+    "$oid": "66f6d4f110e1b4aedd0363d6"
   },
   "maVTTD": "VTTD018",
   "tenVTTD": "Nhân viên Nhân sự - Junior",
@@ -760,14 +1300,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Trần Thị T",
+      "ngaySinh": "1998-12-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "thi.t@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Nhân sự",
+      "chuyenNganh": "Quản trị Nhân sự",
+      "GPA": 3.7,
+      "cacKyNang": [
+        "Quản lý nhân sự",
+        "Tuyển dụng",
+        "Phát triển nhân viên"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Nhân sự."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Nguyễn Thị N",
+      "ngaySinh": "1997-11-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hồ Chí Minh",
+      "email": "thi.n@example.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Nhân sự",
+      "chuyenNganh": "Quản trị Nhân sự",
+      "GPA": 2.8,
+      "cacKyNang": [
+        "Quản lý nhân sự",
+        "Tuyển dụng",
+        "Phát triển nhân viên"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý nhân sự, tuyển dụng và phát triển nhân viên.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Nhân sự."
     }
   ],
   "trangThaiVTTD": 1,
@@ -777,7 +1347,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37648"
+    "$oid": "66f6d4f110e1b4aedd0363d7"
   },
   "maVTTD": "VTTD019",
   "tenVTTD": "Nhân viên Kế toán - Junior",
@@ -801,14 +1371,44 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Lê Văn Lê",
+      "ngaySinh": "1998-09-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "lvl@gmail.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Kế toán",
+      "chuyenNganh": "Kế toán thuế",
+      "GPA": 3.3,
+      "cacKyNang": [
+        "Kế toán thuế",
+        "Báo cáo tài chính",
+        "Quản lý tài chính"
+      ],
+      "chiTietKyNang": "Có kiến thức về kế toán thuế, báo cáo tài chính và quản lý tài chính.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kế toán."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Quan Vân Trường",
+      "ngaySinh": "1997-11-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hà Nội",
+      "email": "quan@gmail.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Kế toán",
+      "chuyenNganh": "Báo cáo tài chính",
+      "GPA": 3.4,
+      "cacKyNang": [
+        "Kế toán thuế",
+        "Báo cáo tài chính",
+        "Quản lý tài chính"
+      ],
+      "chiTietKyNang": "Có kiến thức về kế toán thuế, báo cáo tài chính và quản lý tài chính.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Kế toán."
     }
   ],
   "trangThaiVTTD": 1,
@@ -818,7 +1418,7 @@
 },
 {
   "_id": {
-    "$oid": "66e793945626b7425ef37649"
+    "$oid": "66f6d4f110e1b4aedd0363d8"
   },
   "maVTTD": "VTTD020",
   "tenVTTD": "Nhân viên Hành chính - Junior",
@@ -842,98 +1442,48 @@
   "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
   "danhSachUngVien": [
     {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
+      "soCCCD": "888999000",
+      "hoTen": "Nguyễn Thị Trinh",
+      "ngaySinh": "1998-05-20",
+      "diaChi": "789 Đường NOP, Quận KLM, Hà Nội",
+      "email": "trinh@example.com",
+      "soDienThoai": "0909988776",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Hành chính",
+      "GPA": 3,
+      "cacKyNang": [
+        "Quản lý tài liệu",
+        "Lập kế hoạch",
+        "Sắp xếp công việc"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý tài liệu, lập kế hoạch và sắp xếp công việc.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hành chính."
     },
     {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
+      "soCCCD": "333444555",
+      "hoTen": "Hoàng Văn Hồng",
+      "ngaySinh": "1997-09-15",
+      "diaChi": "456 Đường NOP, Quận STU, Hà Nội",
+      "email": "pinky@gmail.com",
+      "soDienThoai": "0987654321",
+      "hocVan": "Đại học Quản trị Kinh doanh",
+      "chuyenNganh": "Quản trị Hành chính",
+      "GPA": 3.5,
+      "cacKyNang": [
+        "Quản lý tài liệu",
+        "Lập kế hoạch",
+        "Sắp xếp công việc"
+      ],
+      "chiTietKyNang": "Có kiến thức về quản lý tài liệu, lập kế hoạch và sắp xếp công việc.",
+      "kinhNghiemLamViec": "Chưa có kinh nghiệm.",
+      "cacDuAn": "Chưa có kinh nghiệm.",
+      "mucTieuCaNhan": "Phát triển sự nghiệp nhân viên Hành chính."
     }
   ],
   "trangThaiVTTD": 1,
   "created_at": "2023-07-15",
   "updated_at": "2023-07-15",
-  "deleted_at": "2024-9-16"
-},
-{
-  "_id": {
-    "$oid": "66e7ac350c3c7703535c0802"
-  },
-  "maVTTD": "VTD0020",
-  "tenVTTD": "Kỹ sư phần mềm",
-  "loaiVTTD": "Toàn thời gian",
-  "ngayBatDauTD": "9/16/2024",
-  "ngayKetThucTD": "10/16/2024",
-  "soLuongTD": 3,
-  "mucLuong": "1000 - 1500 USD",
-  "diaDiem": "Hà Nội",
-  "diaChiCuThe": "ABC",
-  "hinhThucLamViec": "Offline",
-  "gioiTinh": "Không yêu cầu",
-  "kinhNghiemYeuCau": 1,
-  "moTaVTTD": "",
-  "kyNangYeuCau": [
-    "Giỏi code"
-  ],
-  "yeuCauChiTiet": "",
-  "quyenLoi": "",
-  "trangThaiVTTD": 0,
-  "created_at": "2024-9-16",
-  "updated_at": "2024-9-18",
-  "deleted_at": "",
-  "danhSachUngVien": [
-    {
-      "hoTen": "Nguyen Van A",
-      "ngaySinh": "1990-01-01",
-      "GPA": 8.5
-    },
-    {
-      "hoTen": "Tran Thi B",
-      "ngaySinh": "1992-05-12",
-      "GPA": 9
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "66eaf49c01e87dd8792fea24"
-  },
-  "maVTTD": "VTTD0021",
-  "tenVTTD": "Lập trình viên PHP – Junior",
-  "loaiVTTD": "IT phần mềm",
-  "ngayBatDauTD": "2023-09-23",
-  "ngayKetThucTD": "2023-12-02",
-  "soLuongTD": 6,
-  "mucLuong": "Trên 12 triệu",
-  "diaDiem": "Hà Nội",
-  "diaChiCuThe": "123 Đường ABC, Quận XYZ, Hà Nội",
-  "hinhThucLamViec": "Remote",
-  "gioiTinh": "Không yêu cầu",
-  "kinhNghiemYeuCau": 2,
-  "moTaVTTD": "Tuyển dụng lập trình viên PHP mới ra trường.",
-  "kyNangYeuCau": [
-    "PHP",
-    "MySQL",
-    "SQL Sever"
-  ],
-  "yeuCauChiTiet": "Có kiến thức về PHP và MySQL và SQL Sever.",
-  "quyenLoi": "Lương cứng, thưởng, cơ hội thăng tiến.",
-  "danhSachUngVien": [
-    {
-      "hoTen": "Phan Công Huy",
-      "ngaySinh": "2003-08-28",
-      "GPA": 9
-    },
-    {
-      "hoTen": "Lê Bá Duy",
-      "ngaySinh": "2003-08-25",
-      "GPA": 10
-    }
-  ],
-  "trangThaiVTTD": 1,
-  "created_at": "2023-09-28",
-  "updated_at": "2023-09-28",
   "deleted_at": ""
 }]

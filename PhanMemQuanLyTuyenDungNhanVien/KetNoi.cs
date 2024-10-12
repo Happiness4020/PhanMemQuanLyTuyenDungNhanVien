@@ -19,6 +19,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         private MongoClient client;
         private IMongoDatabase database;
         private IMongoCollection<BsonDocument> vitrituyendung;
+        private IMongoCollection<BsonDocument> nhanvien;
 
 
         public KetNoi()
@@ -27,6 +28,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             client = new MongoClient(connectionString);
             database = client.GetDatabase("QLTuyenDungNhanVien");
             vitrituyendung = database.GetCollection<BsonDocument>("vitrituyendung");
+            nhanvien = database.GetCollection<BsonDocument>("NhanVien");
         }
 
         public int KiemTraKetNoi()
@@ -219,6 +221,68 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             return dt;
         }
 
+        // Nhân viên
+        private DataTable CreateDataTable_NhanVien()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("hoTen");
+            dt.Columns.Add("ngaySinh");
+            dt.Columns.Add("gioiTinh");
+            dt.Columns.Add("diaChi");
+            dt.Columns.Add("sdt");
+            dt.Columns.Add("email");
+            dt.Columns.Add("viTri");
+            dt.Columns.Add("ngayVaoLam");
+            dt.Columns.Add("username");
+            dt.Columns.Add("matKhau");
+            dt.Columns.Add("quyenTruyCap");
+            dt.Columns.Add("ngayTaoTaiKhoan");
+            dt.Columns.Add("trangThai");
+            return dt;
+        }
+
+        // Load collection Nhân viên
+        public DataTable LoadData_NhanVien()
+        {
+            var results = nhanvien.Find(new BsonDocument()).ToList();
+            DataTable dt = CreateDataTable_NhanVien();
+
+            foreach (var result in results)
+            {
+                
+                DataRow row = dt.NewRow();
+                row["hoTen"] = result.GetValue("hoTen", "").ToString();
+                row["ngaySinh"] = result.GetValue("ngaySinh", "").ToString();
+                row["gioiTinh"] = result.GetValue("gioiTinh", "").ToString();
+                row["diaChi"] = result.GetValue("diaChi", "");
+                row["sdt"] = result.GetValue("sdt", "");
+                row["email"] = result.GetValue("email", "").ToString();
+                row["viTri"] = result.GetValue("viTri", "").ToString();
+                row["ngayVaoLam"] = result.GetValue("ngayVaoLam", "").ToString();
+                    
+                // Lấy thông tin từ object "taiKhoan"
+                if (result.Contains("taiKhoan"))
+                {
+                    var taiKhoan = result["taiKhoan"].AsBsonDocument;
+                    row["username"] = taiKhoan.GetValue("username", "").ToString();
+                    row["matKhau"] = taiKhoan.GetValue("matKhau", "").ToString();
+                    row["quyenTruyCap"] = taiKhoan.GetValue("quyenTruyCap", "").ToString();
+                    row["ngayTaoTaiKhoan"] = taiKhoan.GetValue("ngayTaoTaiKhoan", "").ToString();
+                    row["trangThai"] = taiKhoan.GetValue("trangThai", "").ToString();
+                }
+                else
+                {
+                    row["username"] = "";
+                    row["matKhau"] = "";
+                    row["quyenTruyCap"] = "";
+                    row["ngayTaoTaiKhoan"] = "";
+                    row["trangThai"] = "";
+                }
+                dt.Rows.Add(row);
+            }
+
+            return dt;
+        }
 
         private UngVien ConvertBsonToUngVien(BsonDocument ungVienBson)
         {

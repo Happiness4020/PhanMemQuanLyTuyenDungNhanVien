@@ -1,0 +1,120 @@
+[{
+    "hoTen": "Nguyễn Văn A",
+    "ngaySinh": "13/08/2003",
+    "gioiTinh": "Nam",
+    "diaChi": "Hồ Chí Minh, Việt Nam",
+    "sdt": "0123456789",
+    "email": "nguyenvana@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "12/10/2024",
+    "taiKhoan": {
+      "username": "nguyenvana",
+      "matKhau": "123456",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "12/10/2024",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Trần Văn B",
+    "ngaySinh": "16/02/2003",
+    "gioiTinh": "Nam",
+    "diaChi": "Đà Nẵng, Việt Nam",
+    "sdt": "0123425123",
+    "email": "tranvanb@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "21/12/2023",
+    "taiKhoan": {
+      "username": "tranvanb",
+      "matKhau": "123",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "21/12/2024",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Đỗ Thanh C",
+    "ngaySinh": "10/03/2003",
+    "gioiTinh": "Nữ",
+    "diaChi": "Hải Phòng, Việt Nam",
+    "sdt": "0123451256",
+    "email": "dothanhc@gmail.com",
+    "viTri": "Quản trị viên",
+    "ngayVaoLam": "01/01/2023",
+    "taiKhoan": {
+      "username": "dothanhc",
+      "matKhau": "1",
+      "quyenTruyCap": "quanTriVien",
+      "ngayTaoTaiKhoan": "01/01/2023",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Nguyễn Minh D",
+    "ngaySinh": "25/06/2002",
+    "gioiTinh": "Nam",
+    "diaChi": "Cần Thơ, Việt Nam",
+    "sdt": "0123498357",
+    "email": "nguyenminhd@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "01/04/2024",
+    "taiKhoan": {
+      "username": "nguyenminhd",
+      "matKhau": "456",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "01/04/2024",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Bùi Trần E",
+    "ngaySinh": "29/07/2001",
+    "gioiTinh": "Nữ",
+    "diaChi": "Nha Trang, Việt Nam",
+    "sdt": "0123484710",
+    "email": "buitrane@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "05/11/2023",
+    "taiKhoan": {
+      "username": "buitrane",
+      "matKhau": "123",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "05/11/2023",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Hồ Trọng F",
+    "ngaySinh": "03/02/2003",
+    "gioiTinh": "Nam",
+    "diaChi": "Quảng Ninh, Việt Nam",
+    "sdt": "0123461790",
+    "email": "hotrongf@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "05/11/2023",
+    "taiKhoan": {
+      "username": "hotrongf",
+      "matKhau": "123",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "05/11/2023",
+      "trangThai": "hoatDong"
+    }
+  },
+  {
+    "hoTen": "Vũ Thanh G",
+    "ngaySinh": "10/10/2003",
+    "gioiTinh": "Nữ",
+    "diaChi": "Gia Lai, Việt Nam",
+    "sdt": "0123438061",
+    "email": "vuthanhg@gmail.com",
+    "viTri": "Nhân viên",
+    "ngayVaoLam": "24/12/2023",
+    "taiKhoan": {
+      "username": "vuthanhg",
+      "matKhau": "1212",
+      "quyenTruyCap": "nhanVien",
+      "ngayTaoTaiKhoan": "24/12/2023",
+      "trangThai": "hoatDong"
+    }
+  }
+]
