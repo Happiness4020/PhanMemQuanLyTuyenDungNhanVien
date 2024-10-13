@@ -1,4 +1,4 @@
-﻿using QuanLiNhaHang;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +18,9 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmDashBoard());
-            //Application.Run(new frm_Login());
+            Application.Run(new frm_Login());
             //Application.Run(new frm_DangKy());
-            Application.Run(new frm_QLNhanVien());
+            //Application.Run(new frm_QLNhanVien());
         }
     }
 }

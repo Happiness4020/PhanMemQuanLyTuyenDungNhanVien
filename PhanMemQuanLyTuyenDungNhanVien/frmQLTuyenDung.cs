@@ -40,12 +40,12 @@ namespace PhanMemQuanLyTuyenDungNhanVien
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn có chắc muốn xóa?","Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Bạn có chắc muốn xóa?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(dr == DialogResult.Yes)
+            if (dr == DialogResult.Yes)
             {
                 string _updated_at = now.Year + "-" + now.Month + "-" + now.Day;
-                bool xoaThanhCong = ketNoi.XoaViTri(txt_maVTTD.Text, _updated_at);
+                bool xoaThanhCong = ketNoi.XoaViTri(txt_maVTTD.Text);
 
                 if (xoaThanhCong)
                 {
@@ -58,7 +58,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                 }
 
                 refreshDataGridView();
-            }            
+            }
         }
 
         private void btn_luu_Click(object sender, EventArgs e)
@@ -144,6 +144,10 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                 refreshDataGridView();
             }
         }
+
+
+
+
 
         private void btn_lamMoi_Click(object sender, EventArgs e)
         {

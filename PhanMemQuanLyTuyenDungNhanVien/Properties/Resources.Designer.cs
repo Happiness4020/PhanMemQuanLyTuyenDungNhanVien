@@ -19,7 +19,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,36 @@ namespace PhanMemQuanLyTuyenDungNhanVien.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _240_F_160981431_Sw2es2PV5t5kUqITmrA1VomMdvdd7g3P {
+            get {
+                object obj = ResourceManager.GetObject("240_F_160981431_Sw2es2PV5t5kUqITmrA1VomMdvdd7g3P", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29 {
+            get {
+                object obj = ResourceManager.GetObject("240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29__1_ {
+            get {
+                object obj = ResourceManager.GetObject("240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -193,9 +223,39 @@ namespace PhanMemQuanLyTuyenDungNhanVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grouping {
+            get {
+                object obj = ResourceManager.GetObject("grouping", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grouping__1_ {
+            get {
+                object obj = ResourceManager.GetObject("grouping (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap handshake {
             get {
                 object obj = ResourceManager.GetObject("handshake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list__1_ {
+            get {
+                object obj = ResourceManager.GetObject("list (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +386,16 @@ namespace PhanMemQuanLyTuyenDungNhanVien.Properties {
         internal static System.Drawing.Bitmap signup__1_ {
             get {
                 object obj = ResourceManager.GetObject("signup (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Staff3 {
+            get {
+                object obj = ResourceManager.GetObject("Staff3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

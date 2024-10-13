@@ -40,13 +40,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(112)))), ((int)(((byte)(253)))));
+            this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(9, 10);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(10, 27);
+            this.button1.Size = new System.Drawing.Size(8, 22);
             this.button1.TabIndex = 12;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
@@ -56,9 +57,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(28, 18);
+            this.label1.Location = new System.Drawing.Point(21, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 19);
+            this.label1.Size = new System.Drawing.Size(166, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "SAO LƯU VÀ PHỤC HỒI";
             // 
@@ -67,9 +69,10 @@
             this.btn_Saoluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_Saoluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Saoluu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Saoluu.Location = new System.Drawing.Point(32, 93);
+            this.btn_Saoluu.Location = new System.Drawing.Point(24, 76);
+            this.btn_Saoluu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Saoluu.Name = "btn_Saoluu";
-            this.btn_Saoluu.Size = new System.Drawing.Size(257, 60);
+            this.btn_Saoluu.Size = new System.Drawing.Size(193, 49);
             this.btn_Saoluu.TabIndex = 13;
             this.btn_Saoluu.Text = "Sao Lưu Dữ Liệu";
             this.btn_Saoluu.UseVisualStyleBackColor = false;
@@ -80,9 +83,10 @@
             this.btn_Phuchoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Phuchoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Phuchoi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Phuchoi.Location = new System.Drawing.Point(32, 214);
+            this.btn_Phuchoi.Location = new System.Drawing.Point(24, 174);
+            this.btn_Phuchoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Phuchoi.Name = "btn_Phuchoi";
-            this.btn_Phuchoi.Size = new System.Drawing.Size(257, 60);
+            this.btn_Phuchoi.Size = new System.Drawing.Size(193, 49);
             this.btn_Phuchoi.TabIndex = 14;
             this.btn_Phuchoi.Text = "Phục Hồi Dữ Liệu";
             this.btn_Phuchoi.UseVisualStyleBackColor = false;
@@ -92,9 +96,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(46, 60);
+            this.label2.Location = new System.Drawing.Point(34, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 16);
+            this.label2.Size = new System.Drawing.Size(249, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Sao lưu dữ liệu hệ thống tính đến thời điểm hiện tại";
             // 
@@ -102,9 +107,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(46, 186);
+            this.label3.Location = new System.Drawing.Point(34, 151);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 20);
+            this.label3.Size = new System.Drawing.Size(224, 13);
             this.label3.TabIndex = 16;
             this.label3.Text = "Phục hồi dữ liệu hệ thống đã sao lưu trước đó";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -113,9 +119,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(29, 60);
+            this.label4.Location = new System.Drawing.Point(22, 49);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 16);
+            this.label4.Size = new System.Drawing.Size(11, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "*";
             // 
@@ -123,18 +130,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(29, 186);
+            this.label5.Location = new System.Drawing.Point(22, 151);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 16);
+            this.label5.Size = new System.Drawing.Size(11, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "*";
             // 
             // frmSaoLuuPhucHoi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1339, 858);
+            this.ClientSize = new System.Drawing.Size(1004, 697);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -144,6 +152,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmSaoLuuPhucHoi";
             this.Text = "frmSaoLuuPhucHoi";
             this.ResumeLayout(false);
@@ -155,11 +164,11 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Saoluu;
-        private System.Windows.Forms.Button btn_Phuchoi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button btn_Saoluu;
+        public System.Windows.Forms.Button btn_Phuchoi;
     }
 }

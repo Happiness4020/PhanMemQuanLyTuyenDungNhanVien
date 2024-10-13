@@ -132,7 +132,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
 
         }
         //Hàm tính tuổi trung bình của tất cả ứng viên
-        public static double TuoiTrungBinh(IMongoCollection<BsonDocument> collection)
+        /*public static double TuoiTrungBinh(IMongoCollection<BsonDocument> collection)
         {
             var candidateAges = new List<int>();
 
@@ -159,6 +159,55 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                     {
                         Console.WriteLine($"Không thể chuyển đổi ngày tháng: {ngaySinh}");
                     }
+                }
+            }
+
+            if (candidateAges.Count > 0)
+            {
+                double averageAge = candidateAges.Average();
+                return Math.Round(averageAge, 1);
+            }
+            else
+            {
+                return 0;
+            }
+        }*/
+
+        public static double TuoiTrungBinh(IMongoCollection<BsonDocument> collection)
+        {
+            var candidateAges = new List<int>();
+
+            // Lặp qua tất cả tài liệu trong bộ sưu tập
+            foreach (var document in collection.AsQueryable())
+            {
+                // Kiểm tra xem tài liệu có chứa trường 'danhSachUngVien' không
+                if (document.Contains("danhSachUngVien"))
+                {
+                    var danhSachUngVien = document.GetValue("danhSachUngVien").AsBsonArray;
+
+                    foreach (var candidateBson in danhSachUngVien)
+                    {
+                        var candidate = candidateBson.AsBsonDocument;
+                        var ngaySinh = candidate.GetValue("ngaySinh").AsString; // Trích xuất giá trị ngày tháng kiểu chuỗi
+                        if (DateTime.TryParse(ngaySinh, out DateTime ngaySinhDate))
+                        {
+                            ngaySinhDate = DateTime.SpecifyKind(ngaySinhDate, DateTimeKind.Utc);
+                            int age = DateTime.UtcNow.Year - ngaySinhDate.Year;
+                            if (DateTime.UtcNow < ngaySinhDate.AddYears(age))
+                            {
+                                age--;
+                            }
+                            candidateAges.Add(age);
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Không thể chuyển đổi ngày tháng: {ngaySinh}");
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Tài liệu không chứa trường 'danhSachUngVien'.");
                 }
             }
 

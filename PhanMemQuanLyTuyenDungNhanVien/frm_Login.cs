@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLiNhaHang
+namespace PhanMemQuanLyTuyenDungNhanVien
 {
     public partial class frm_Login : Form
     {
@@ -19,7 +19,7 @@ namespace QuanLiNhaHang
         // Thay đổi connectionString cho phù hợp với MongoDB của bạn
         private readonly string connectionString = "mongodb://localhost:27017";
         private readonly string databaseName = "QLTuyenDungNhanVien"; // Tên cơ sở dữ liệu
-        private readonly string collectionName = "UserAccounts"; // Tên collection chứa thông tin người dùng
+        //private readonly string collectionName = "NhanVien"; // Tên collection chứa thông tin người dùng
         public frm_Login()
         {
             InitializeComponent();
@@ -45,39 +45,79 @@ namespace QuanLiNhaHang
         {
             if (textBoxUsername.Text.Length == 0 || textBoxPassword.Text.Length == 0)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ tên đăng nhập và mật khẩu!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng điền đầy đủ tên đăng nhập và mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             string username = textBoxUsername.Text;
             string password = textBoxPassword.Text;
 
-            // Kiểm tra thông tin đăng nhập từ MongoDB
-            if (IsLoginValid(username, password))
+            // Kết nối tới MongoDB
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(databaseName);
+            var collection = database.GetCollection<NhanVien>("NhanVien");
+
+            // Tìm kiếm nhân viên dựa trên username và password
+            var nhanVien = collection.AsQueryable().FirstOrDefault(nv => nv.TaiKhoan.Username == username && nv.TaiKhoan.MatKhau == password);
+
+            if (nhanVien != null)
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmDashBoard mainForm = new frmDashBoard();
+                // Nếu tài khoản đúng, kiểm tra quyền truy cập
+                frmDashBoard dashboard = new frmDashBoard();
+                frm_QLNhanVien QLNhanVien = new frm_QLNhanVien();
+
+
+                if (nhanVien.TaiKhoan.QuyenTruyCap == "quanTriVien")
+                {
+                    dashboard.qlungvien = true;
+                    dashboard.qltuyendung = true;
+                    dashboard.qlphuchoi = true;
+                    dashboard.qlnhanvien = true;
+                }
+                else if (nhanVien.TaiKhoan.QuyenTruyCap == "nhanVien")
+                {
+                    dashboard.qlungvien = false;
+                    dashboard.qltuyendung = false;
+                    dashboard.qlphuchoi = false;
+                    dashboard.qlnhanvien = false;
+                }
+
                 this.Hide();
-                mainForm.Show();
+                dashboard.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Nếu tài khoản không đúng, hiển thị thông báo lỗi
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        // Phương thức kiểm tra thông tin đăng nhập từ MongoDB
-        private bool IsLoginValid(string username, string password)
+
+        // Phương thức để thiết lập chế độ quản trị
+        public void SetAdminMode(bool isAdmin)
         {
-            var client = new MongoClient(connectionString);
-            var database = client.GetDatabase(databaseName);
-            var collection = database.GetCollection<User>("UserAccounts"); // Đổi thành tên collection bạn sử dụng
+            // Lấy thể hiện hiện tại của frm_QLNhanVien
+            frm_QLNhanVien QLNhanVien = new frm_QLNhanVien(); // hoặc bạn có thể làm theo cách khác để có được thể hiện hiện tại
 
-            // Tìm người dùng trong MongoDB
-            var user = collection.Find(u => u.username == username && u.password == password).FirstOrDefault();
-
-            return user != null;
+            // Nếu là quản trị viên, bật tất cả các nút
+            if (isAdmin)
+            {
+                QLNhanVien.btn_them.Enabled = true;
+                QLNhanVien.btn_luu.Enabled = true;
+                QLNhanVien.btn_xoa.Enabled = true;
+                QLNhanVien.btn_lamMoi.Enabled = true;
+            }
+            else
+            {
+                // Nếu không phải là quản trị viên, tắt tất cả các nút
+                QLNhanVien.grb_TT.Enabled = false;
+                QLNhanVien.btn_them.Visible = false;
+                QLNhanVien.btn_luu.Visible = false;
+                QLNhanVien.btn_xoa.Visible = false;
+                QLNhanVien.btn_lamMoi.Visible = false;
+            }
         }
+
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

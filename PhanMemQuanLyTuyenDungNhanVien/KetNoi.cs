@@ -20,6 +20,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         private IMongoDatabase database;
         private IMongoCollection<BsonDocument> vitrituyendung;
         private IMongoCollection<BsonDocument> nhanvien;
+        private IMongoCollection<BsonDocument> ungVien;
 
 
         public KetNoi()
@@ -29,6 +30,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             database = client.GetDatabase("QLTuyenDungNhanVien");
             vitrituyendung = database.GetCollection<BsonDocument>("vitrituyendung");
             nhanvien = database.GetCollection<BsonDocument>("NhanVien");
+            ungVien = database.GetCollection<BsonDocument>("UngVien");
         }
 
         public int KiemTraKetNoi()
@@ -106,38 +108,15 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         public List<UngVien> FillThongTinUngVienTheoTenTTD(string tenVTTD)
         {
             var filter = Builders<BsonDocument>.Filter.Eq("tenVTTD", tenVTTD);
-            var results = vitrituyendung.Find(filter);
+            var results = ungVien.Find(filter).ToList();
             var danhSachUngVien = new List<UngVien>();
-
-            foreach (var result in results.ToList())
+            foreach (var result in results)
             {
-                if (result.Contains("danhSachUngVien"))
-                {
-                    foreach (var ungVienBson in result["danhSachUngVien"].AsBsonArray)
-                    {
-                        var cacKyNangArray = ungVienBson["cacKyNang"].IsBsonNull ? new string[0] : ungVienBson["cacKyNang"].AsBsonArray.Select(x => x.ToString()).ToArray();
-                        var ungVien = new UngVien
-                        {
-                            soCCCD = ungVienBson["soCCCD"].AsString,
-                            hoTen = ungVienBson["hoTen"].AsString,
-                            ngaySinh = DateTime.Parse(ungVienBson["ngaySinh"].AsString),
-                            diaChi = ungVienBson["diaChi"].AsString,
-                            email = ungVienBson["email"].AsString,
-                            soDienThoai = ungVienBson["soDienThoai"].AsString,
-                            hocVan = ungVienBson["hocVan"].AsString,
-                            chuyenNganh = ungVienBson["chuyenNganh"].AsString,
-                            GPA = ((double)ungVienBson["GPA"]),
-                            cacKyNang = cacKyNangArray.ToList(),
-                            chiTietKyNang = ungVienBson["chiTietKyNang"].AsString,
-                            kinhNghiemLamViec = ungVienBson["kinhNghiemLamViec"].AsString,
-                            cacDuAn = ungVienBson["cacDuAn"].AsString,
-                            mucTieuCaNhan = ungVienBson["mucTieuCaNhan"].AsString
-                        };
-
-                        danhSachUngVien.Add(ungVien);
-                    }
-                }
+                // Giả định rằng thông tin ứng viên đã được lưu trực tiếp trong collection UngVien
+                var ungVien = ConvertBsonToUngVien(result); // Chuyển đổi từng tài liệu BsonDocument thành UngVien
+                danhSachUngVien.Add(ungVien);
             }
+
             return danhSachUngVien;
         }
 
@@ -225,6 +204,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         private DataTable CreateDataTable_NhanVien()
         {
             DataTable dt = new DataTable();
+            dt.Columns.Add("_id");
             dt.Columns.Add("hoTen");
             dt.Columns.Add("ngaySinh");
             dt.Columns.Add("gioiTinh");
@@ -251,6 +231,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             {
                 
                 DataRow row = dt.NewRow();
+                row["_id"] = result.GetValue("_id", "").ToString();
                 row["hoTen"] = result.GetValue("hoTen", "").ToString();
                 row["ngaySinh"] = result.GetValue("ngaySinh", "").ToString();
                 row["gioiTinh"] = result.GetValue("gioiTinh", "").ToString();
@@ -304,11 +285,16 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                 ? cacKyNangValue.AsBsonArray.Select(x => x.ToString()).ToArray()
                 : new string[0];
 
+            // Sửa lỗi ngay tại đây
+            var ngaySinh = ngaySinhValue.IsBsonDateTime
+                ? ngaySinhValue.ToUniversalTime()
+                : DateTime.MinValue;
+
             return new UngVien
             {
                 soCCCD = soCCCDValue?.AsString ?? "Không xác định",
                 hoTen = hoTenValue?.AsString ?? "Không xác định",
-                ngaySinh = ngaySinhValue != null ? DateTime.Parse(ngaySinhValue.AsString) : DateTime.MinValue,
+                ngaySinh = ngaySinh, // Sử dụng giá trị DateTime từ BsonDateTime
                 diaChi = diaChiValue?.AsString ?? "Không xác định",
                 email = emailValue?.AsString ?? "Không xác định",
                 soDienThoai = soDienThoaiValue?.AsString ?? "Không xác định",
@@ -323,22 +309,32 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             };
         }
 
-
-        public bool XoaViTri(string maVTTD, string deleted_at)
+        public bool XoaViTri(string maVTTD)
         {
             var filter = Builders<BsonDocument>.Filter.Eq("maVTTD", maVTTD);
-            var update = Builders<BsonDocument>.Update
-                .Set("deleted_at", deleted_at);
 
-            UpdateResult result = vitrituyendung.UpdateOne(filter, update);
+            // Thực hiện xóa tài liệu
+            DeleteResult result = vitrituyendung.DeleteOne(filter);
+
+            // Kiểm tra xem có tài liệu nào bị xóa không
+            return result.DeletedCount > 0;
+        }
 
 
-            if (result.ModifiedCount > 0)
+        public bool XoaNhanVien(string maNhanVien)
+        {
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(maNhanVien));
+
+            DeleteResult result = nhanvien.DeleteOne(filter);
+
+            if (result.DeletedCount > 0)
             {
                 return true;
             }
             return false;
         }
+
+
 
         public void CapNhatViTriTuyenDung(string maVTTD, string tenVTTD, string loaiVTTD, string ngayBatDauTD, string ngayKetThucTD, int soLuongTD, string mucLuong, string diaDiem, string diaChiCuThe, string hinhThucLamViec, string gioiTinh, int kinhNghiemYeuCau, string moTaVTTD, List<string> kyNangYeuCau, string yeuCauChiTiet, string quyenLoi, int trangThaiVTTD, string updated_at)
         {
@@ -416,6 +412,139 @@ namespace PhanMemQuanLyTuyenDungNhanVien
                 return false;
             }
 
+        }
+
+
+
+
+        public bool ThemNhanVien(string hoTen, string ngaySinh, string gioiTinh, string diaChi, string sdt, string email, string viTri, string ngayVaoLam, string username, string matKhau, string quyenTruyCap, string ngayTaoTaiKhoan, string trangThai)
+        {
+            var nhanVienDocument = new BsonDocument
+            {
+                { "hoTen", hoTen },
+                { "ngaySinh", ngaySinh },
+                { "gioiTinh", gioiTinh },
+                { "diaChi", diaChi },
+                { "sdt", sdt },
+                { "email", email },
+                { "viTri", viTri },
+                { "ngayVaoLam", ngayVaoLam },
+                { "taiKhoan", new BsonDocument
+                    {
+                        { "username", username },
+                        { "matKhau", matKhau },
+                        { "quyenTruyCap", quyenTruyCap },
+                        { "ngayTaoTaiKhoan", ngayTaoTaiKhoan },
+                        { "trangThai", trangThai }
+                    }
+                },
+            };
+
+            try
+            {
+                nhanvien.InsertOne(nhanVienDocument);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm nhân viên: " + ex.Message);
+                return false;
+            }
+        }
+
+
+        public void CapNhatNhanVien(string id, string hoTen, string ngaySinh, string gioiTinh, string diaChi, string sdt, string email, string viTri, string ngayVaoLam, string username, string matKhau, string quyenTruyCap, string trangThai)
+        {
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(id));
+
+            var update = Builders<BsonDocument>.Update
+                .Set("hoTen", hoTen)
+                .Set("ngaySinh", ngaySinh)
+                .Set("gioiTinh", gioiTinh)
+                .Set("diaChi", diaChi)
+                .Set("sdt", sdt)
+                .Set("email", email)
+                .Set("viTri", viTri)
+                .Set("ngayVaoLam", ngayVaoLam)
+                .Set("taiKhoan.username", username)
+                .Set("taiKhoan.matKhau", matKhau)
+                .Set("taiKhoan.quyenTruyCap", quyenTruyCap)
+                .Set("taiKhoan.trangThai", trangThai);
+
+            UpdateResult result = nhanvien.UpdateOne(filter, update);
+
+            if (result.ModifiedCount > 0)
+            {
+                MessageBox.Show("Cập nhật thông tin nhân viên thành công");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thông tin nhân viên thất bại");
+            }
+        }
+
+
+
+
+
+        public void ThemUngVien(UngVien ungVienMoi)
+        {
+            // Tạo document ứng viên mới
+            var ungVienDocument = new BsonDocument
+            {
+                { "soCCCD", ungVienMoi.soCCCD },
+                { "hoTen", ungVienMoi.hoTen },
+                { "ngaySinh", ungVienMoi.ngaySinh },
+                { "diaChi", ungVienMoi.diaChi },
+                { "email", ungVienMoi.email },
+                { "soDienThoai", ungVienMoi.soDienThoai },
+                { "hocVan", ungVienMoi.hocVan },
+                { "chuyenNganh", ungVienMoi.chuyenNganh },
+                { "GPA", ungVienMoi.GPA },
+                { "cacKyNang", new BsonArray(ungVienMoi.cacKyNang) }, // Chuyển list sang BsonArray
+                { "chiTietKyNang", ungVienMoi.chiTietKyNang },
+                { "kinhNghiemLamViec", ungVienMoi.kinhNghiemLamViec },
+                { "cacDuAn", ungVienMoi.cacDuAn },
+                { "mucTieuCaNhan", ungVienMoi.mucTieuCaNhan },
+                { "tenVTTD", ungVienMoi.tenVTTD } // Lưu tên vị trí tuyển dụng
+            };
+
+            // Thêm ứng viên vào collection
+            ungVien.InsertOne(ungVienDocument);
+
+            Console.WriteLine("Thêm ứng viên thành công!");
+        }
+
+
+        public void SuaUngVien(UngVien ungVienCapNhat)
+        {
+            // Tạo filter để tìm ứng viên cần sửa
+            var filter = Builders<BsonDocument>.Filter.Eq("soCCCD", ungVienCapNhat.soCCCD); // Hoặc sử dụng một thuộc tính khác để tìm kiếm
+
+            // Tạo document cập nhật
+            var update = Builders<BsonDocument>.Update
+                .Set("hoTen", ungVienCapNhat.hoTen)
+                .Set("ngaySinh", ungVienCapNhat.ngaySinh)
+                .Set("diaChi", ungVienCapNhat.diaChi)
+                .Set("email", ungVienCapNhat.email)
+                .Set("soDienThoai", ungVienCapNhat.soDienThoai)
+                .Set("hocVan", ungVienCapNhat.hocVan)
+                .Set("chuyenNganh", ungVienCapNhat.chuyenNganh)
+                .Set("GPA", ungVienCapNhat.GPA)
+                .Set("cacKyNang", new BsonArray(ungVienCapNhat.cacKyNang))
+                .Set("chiTietKyNang", ungVienCapNhat.chiTietKyNang)
+                .Set("kinhNghiemLamViec", ungVienCapNhat.kinhNghiemLamViec)
+                .Set("cacDuAn", ungVienCapNhat.cacDuAn)
+                .Set("mucTieuCaNhan", ungVienCapNhat.mucTieuCaNhan)
+                .Set("tenVTTD", ungVienCapNhat.tenVTTD);
+
+            // Thực hiện cập nhật
+            var result = ungVien.UpdateOne(filter, update);
+
+            if (result.ModifiedCount == 0)
+            {
+                throw new Exception("Không tìm thấy ứng viên để cập nhật.");
+            }
         }
 
     }

@@ -170,7 +170,7 @@
     <Compile Include="frm_QLNhanVien.Designer.cs">
       <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="NhanVien.cs" />
     <Compile Include="frmDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,6 +326,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\list %281%29.png" />
+    <None Include="Resources\grouping %281%29.png" />
+    <None Include="Resources\grouping.png" />
+    <None Include="Resources\240_F_160981431_Sw2es2PV5t5kUqITmrA1VomMdvdd7g3P.jpg" />
+    <None Include="Resources\240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29 %281%29.jpg" />
+    <None Include="Resources\240_F_304766094_oGfiNaNzXOXli1xFLLeqYgZjBABsUB29.jpg" />
+    <None Include="Resources\Staff3.png" />
     <None Include="Resources\signup %281%29.png" />
     <None Include="Resources\signup.png" />
     <None Include="Resources\download.png" />

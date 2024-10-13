@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhanMemQuanLyTuyenDungNhanVien
 {
+
     public class UngVien
     {
         string SoCCCD;
@@ -22,12 +23,18 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         string KinhNghiemLamViec;
         string CacDuAn;
         string MucTieuCaNhan;
+        string MaVTTD;
+        string TenVTTD;
+
+
 
         public UngVien()
         {
         }
 
-        public UngVien(string soCCCD, string hoTen, DateTime ngaySinh, string diaChi, string email, string sdt, string hoVan, string chuyenNganh, double gpa, List<string> cacKyNang, string chiTietKyNang, string kinhNghiemLamViec, string cacDuAn, string mucTieuCaNhan)
+        public UngVien(string soCCCD, string hoTen, DateTime ngaySinh, string diaChi, string email, string sdt, string hoVan,
+        string chuyenNganh, double gpa, List<string> cacKyNang, string chiTietKyNang, string kinhNghiemLamViec, string cacDuAn,
+        string mucTieuCaNhan, string maVTTD, string tenVTTD)
         {
             SoCCCD = soCCCD;
             HoTen = hoTen;
@@ -43,6 +50,8 @@ namespace PhanMemQuanLyTuyenDungNhanVien
             KinhNghiemLamViec = kinhNghiemLamViec;
             CacDuAn = cacDuAn;
             MucTieuCaNhan = mucTieuCaNhan;
+            MaVTTD = maVTTD;
+            TenVTTD = tenVTTD;
         }
 
         public string soCCCD { get => SoCCCD; set => SoCCCD = value; }
@@ -59,5 +68,7 @@ namespace PhanMemQuanLyTuyenDungNhanVien
         public string kinhNghiemLamViec { get => KinhNghiemLamViec; set => KinhNghiemLamViec = value; }
         public string cacDuAn { get => CacDuAn; set => CacDuAn = value; }
         public string mucTieuCaNhan { get => MucTieuCaNhan; set => MucTieuCaNhan = value; }
+        public string maVTTD { get => MaVTTD; set => MaVTTD = value; }
+        public string tenVTTD { get => TenVTTD; set => TenVTTD = value; }
     }
 }
